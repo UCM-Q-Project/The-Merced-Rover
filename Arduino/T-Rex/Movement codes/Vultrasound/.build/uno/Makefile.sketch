@@ -1,0 +1,14 @@
+
+
+
+
+
+.build/uno/src/Vultrasound.cpp : src/Vultrasound.ino
+	@mkdir -p .build/uno/src
+	@echo src/Vultrasound.ino
+	@/usr/local/bin/ino preproc  -o $@ $^
+
+
+all : .build/uno/src/Vultrasound.cpp
+	@true
+

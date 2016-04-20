@@ -1,0 +1,14 @@
+
+
+
+
+
+.build/uno/src/clear.cpp : src/clear.ino
+	@mkdir -p .build/uno/src
+	@echo src/clear.ino
+	@/usr/local/bin/ino preproc  -o $@ $^
+
+
+all : .build/uno/src/clear.cpp
+	@true
+

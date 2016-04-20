@@ -1,0 +1,14 @@
+
+
+
+
+
+.build/uno/src/Chapter3_Project1.cpp : src/Chapter3_Project1.ino
+	@mkdir -p .build/uno/src
+	@echo src/Chapter3_Project1.ino
+	@/usr/local/bin/ino preproc  -o $@ $^
+
+
+all : .build/uno/src/Chapter3_Project1.cpp
+	@true
+

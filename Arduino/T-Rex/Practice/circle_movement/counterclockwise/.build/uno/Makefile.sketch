@@ -1,0 +1,14 @@
+
+
+
+
+
+.build/uno/src/counterclockwise.cpp : src/counterclockwise.ino
+	@mkdir -p .build/uno/src
+	@echo src/counterclockwise.ino
+	@/usr/local/bin/ino preproc  -o $@ $^
+
+
+all : .build/uno/src/counterclockwise.cpp
+	@true
+

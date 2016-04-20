@@ -1,0 +1,14 @@
+
+
+
+
+
+.build/uno/src/Roll_forward_3sec.cpp : src/Roll_forward_3sec.ino
+	@mkdir -p .build/uno/src
+	@echo src/Roll_forward_3sec.ino
+	@/usr/local/bin/ino preproc  -o $@ $^
+
+
+all : .build/uno/src/Roll_forward_3sec.cpp
+	@true
+

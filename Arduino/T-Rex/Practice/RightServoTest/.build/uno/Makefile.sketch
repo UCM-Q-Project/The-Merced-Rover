@@ -1,0 +1,14 @@
+
+
+
+
+
+.build/uno/src/RightServoTest.cpp : src/RightServoTest.ino
+	@mkdir -p .build/uno/src
+	@echo src/RightServoTest.ino
+	@/usr/local/bin/ino preproc  -o $@ $^
+
+
+all : .build/uno/src/RightServoTest.cpp
+	@true
+
