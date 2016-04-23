@@ -5,7 +5,7 @@
     - All of our projects will produce to data which we will explore and analyze in the vein of Big Data analysis.
 
 ##The-Merced-Rover
- * The Merced Rover is a project dedicated to constructing an autonomous rover, a la Google's self-driving car, from the ground up.
+ * The Merced Rover, codenamed Vanguard, is a project dedicated to constructing an autonomous rover, a la Google's self-driving car, from the ground up.
  * Various practices and skills applied:
  
   ###Arduino Programming
