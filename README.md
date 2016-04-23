@@ -19,6 +19,8 @@
 
   ###Data Analysis and Machine Learning w/TensorFlow
    * We are collaborating with the Q Project's AI Research group whom will be implementing Artificial Intelligence to make the rover autonomous.
+   * The AI Research division is currently researching the principles and applications of Machine Learning with Google's ML library TensorFlow.
+   * More info can be found at The AI Research groups https://github.com/UCM-Q-Project/AI-Research
    
   ###Linux Programming
    * s
