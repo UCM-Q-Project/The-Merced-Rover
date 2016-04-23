@@ -10,8 +10,8 @@
  
   ###Arduino Programming
    * For programming movement, the Arduino microcontroller is our choice. The open source microcontroller is powerful enough for simple movement.
-   * As of now, we are currently using the basic Arduino Uno board and a Parallax Arduino Shield bot kit to study different methods of autonomous movement and environmental response. The best methods we finds will be tested and applied to the Rover we build.
-   * While a single Arduino is capable of controlling 4 wheels, it is not as ideal for the full scale rover we are building. To increase functionality, we plan to use an Arduino for each individual wheel and have them controlled by a single Raspberry Pi. 
+   * As of now, we are currently using the basic Arduino Uno board and a Parallax Arduino Shield bot kit to study different methods of autonomous movement and environmental response. The best methods we finds will be tested and applied to the Vanguard rover we build.
+   * While a single Arduino is capable of controlling 4 wheels, it is not as ideal for the full scale Vanguard rover we are building. To increase functionality, we plan to use an Arduino for each individual wheel and have them controlled by a single Raspberry Pi. 
    * See below: Linux Programming - The Raspberry Pi
 
   ###CAD
@@ -25,5 +25,5 @@
    * More info can be found at The AI Research groups https://github.com/UCM-Q-Project/AI-Research
    
   ###Linux Programming - The Raspberry Pi
-   * Arduino's are powerful in their own right, but the limits for their memory capacity and processing power falls short of what we need to control the full scale rover. So, to keep it within the realm of inexpensive Single Board Controllers, the Raspberry Pi is ideal.
+   * Arduino's are powerful in their own right, but the limits for their memory capacity and processing power falls short of what we need to control the Vanguard rover. So, to keep it within the realm of inexpensive Single Board Controllers, the Raspberry Pi is ideal.
    * The programming department are building a server on a Raspberry Pi to handle controlling the separate Arduino's and processing the input. This will allow for the autonomous behavior to be handled quicker and more efficiently.
