@@ -18,6 +18,7 @@
    * Computer Aided Design allows for a visual approach that assists and expedites the design process.
    * Mechanical Engineers utilize Autodesk products, such as Inventor and Fusion, for the CADing process.
    * Rapid prototyping of parts that can be 3-D printed allows for a trial-error-adjustment approach.
+   * For current part designs, see https://github.com/UCM-Q-Project/The-Merced-Rover/tree/master/Vangaurd/CAD
 
   ###Data Analysis and Machine Learning w/TensorFlow
    * We are collaborating with the Q Project's AI Research group whom will be implementing Artificial Intelligence to make the rover autonomous.
