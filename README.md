@@ -3,9 +3,10 @@
   * We take a interdisciplinary collaborative to our projects that allows for members from any background.
 
 ##The-Merced-Rover
- * The Merced Rover is a project dedicated to constructing an autonomous rover from the ground up.
+ * The Merced Rover is a project dedicated to constructing an autonomous rover, a la Google's self-driving car, from the ground up.
  * Various practices and skills applied:
-  - CAD
+ 
+  ###CAD
   - Arduino Programming
   - Linux Programming
   - Data Analysis w/TensorFlow
