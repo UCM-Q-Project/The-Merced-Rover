@@ -6,10 +6,13 @@
  * The Merced Rover is a project dedicated to constructing an autonomous rover, a la Google's self-driving car, from the ground up.
  * Various practices and skills applied:
  
-  ###CAD
+ ###CAD
    * Computer Aided Design using Autodesk Inventor for design and rapid prototyping of parts that can be 3-D printed.
    * 
+  
   ###Arduino Programming
+ 
   ###Linux Programming
+  
   ###Data Analysis w/TensorFlow
 
