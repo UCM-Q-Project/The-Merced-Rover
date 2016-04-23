@@ -7,7 +7,8 @@
  * Various practices and skills applied:
  
   ###CAD
-  * Computer Aided Design using Autodesk Inventor for design and rapid prototyping of parts that can be 3-D printed.
+   * Computer Aided Design using Autodesk Inventor for design and rapid prototyping of parts that can be 3-D printed.
+   * 
   ###Arduino Programming
   ###Linux Programming
   ###Data Analysis w/TensorFlow
