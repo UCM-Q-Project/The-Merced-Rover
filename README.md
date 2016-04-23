@@ -11,15 +11,14 @@
   ###Arduino Programming
    * For programming movement, the Arduino microcontroller is our choice. The open source mcirocontroller is powerful enough for simple movement.
    * As of now, we are currently using the basic Arduino Uno board and a Parallax Arduino Shield bot kit to study different methods of autonomous movement and envoronmental response. The best methods we finds will be tested and applied to the Rover we build.
-   * 
 
   ###CAD
    * Computer Aided Design allows for a visual approach that assists and expedites the design process.
-   * Autodesk products, such as Inventor and Fusion, are powerful CADing tools.
+   * Mechanical Engineers utilize Autodesk products, such as Inventor and Fusion, for the CADing process.
    * Rapid prototyping of parts that can be 3-D printed allows for a trial-error-adjustment approach.
 
-  ###Data Analysis w/TensorFlow
-   * s
+  ###Data Analysis and Machine Learning w/TensorFlow
+   * We are collaborating with the Q Project's AI Research group whom will be implementing Artificial Intelligence to make the rover autonomous.
    
   ###Linux Programming
    * s
