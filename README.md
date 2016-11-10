@@ -19,12 +19,3 @@
    * Mechanical Engineers utilize Autodesk products, such as Inventor and Fusion, for the CADing process.
    * Rapid prototyping of parts that can be 3-D printed allows for a trial-error-adjustment approach.
    * For current part designs, see https://github.com/UCM-Q-Project/The-Merced-Rover/tree/master/Vangaurd/CAD
-
-  ###Data Analysis and Machine Learning w/TensorFlow
-   * We are collaborating with the Q Project's AI Research group whom will be implementing Artificial Intelligence to make the rover autonomous.
-   * The AI Research division is currently researching the principles and applications of Machine Learning with Google's ML library TensorFlow.
-   * More info can be found at The AI Research groups https://github.com/UCM-Q-Project/Data-Analysis--AI-Research
-   
-  ###Linux Programming - The Raspberry Pi
-   * Arduino's are powerful in their own right, but the limits for their memory capacity and processing power falls short of what we need to control the Vanguard rover. So, to keep it within the realm of inexpensive Single Board Controllers, the Raspberry Pi is ideal.
-   * The programming department are building a server on a Raspberry Pi to handle controlling the separate Arduino's and processing the input. This will allow for the autonomous behavior to be handled quicker and more efficiently.
