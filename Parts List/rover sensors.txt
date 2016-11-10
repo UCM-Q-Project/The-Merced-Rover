@@ -1,0 +1,9 @@
+Rover sensors 
+	vangaurd
+		ir sensors (mount to 2 servos)
+			distance/ meauserments / avoidance
+		camera
+			texture 
+	tee-rex
+		sonar (mount to 2 servos)
+			distance/ meauserments / collision avoidance
