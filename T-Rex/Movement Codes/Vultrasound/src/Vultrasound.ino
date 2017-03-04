@@ -1,20 +1,24 @@
 #include <Servo.h>	//import servo
+#include "../lib/QueueArray.h"
 
 int trigPin=6; //Sensor Trig pin connected to Arduino pin 6
 int echoPin=7;  //Sensor Echo pin connected to Arduino pin 7 
 float pingTime;  //time for ping to travel from sensor to target and return
-float targetDistance; //Distance to Target in inches
+float targetDistance; //Distance to Target in centimeters
+float aveDist;
 float speedOfSound=34300;  //Speed of sound in centimeters per second at sea level
 
 Servo sRight;		//declare right servo
 Servo sLeft;		//declare left servo
+QueueArray<float> queue;
 
 int sRight_stop = 1515; 	//current calibration for Right servo to stop
 int sLeft_stop = 1525;		//current calibration for Left servo to stop
 int sRight_fullForward = 1300;	//full forward speed for Right servo
 int sLeft_fullForward = 1725;	//full forward speed for Left servo
 
-void setup() {
+void setup() 
+{
 	sRight.attach(12);
 	sLeft.attach(13);
 
@@ -30,10 +34,10 @@ void setup() {
   	pinMode(echoPin, INPUT);
 }
  
-void loop() {
-	
+void loop() 
+{	
   	digitalWrite(trigPin, LOW); //Set trigger pin low
-  	delayMicroseconds(2000); //Let signal settle
+  	delayMicroseconds(200); //Let signal settle
 	digitalWrite(trigPin, HIGH); //Set trigPin higg
 	delayMicroseconds(15); //Delay in high state
   	digitalWrite(trigPin, LOW); //ping has now been sent
@@ -44,8 +48,16 @@ void loop() {
   	sLeft.writeMicroseconds(sLeft_fullForward);
 
 	targetDistance = distCalc(pulseIn(echoPin,HIGH));
+	aveDist += targetDistance;
 
-	if(targetDistance <= 20){
+	if(queue.count() < 10)
+		queue.enqueue(targetDistance);
+	else
+	{
+		queue.enqueue(targetDistance);
+		aveDist -= queue.dequeue();
+	}
+	if(aveDist / queue.count() <= 35){
   		sRight.writeMicroseconds(sRight_stop);
 		sLeft.writeMicroseconds(sLeft_stop);
 		delay(500);
@@ -69,7 +81,7 @@ void testSide(float dist1) {
 	}
 
 	sRight.writeMicroseconds(sRight_stop);
-	delay(500);
+	//delay(500);
 	dist2 = distCalc(pulseIn(echoPin, HIGH));
 	if(dist2 <= dist1){
 		sRight.writeMicroseconds(sLeft_fullForward);
@@ -88,9 +100,6 @@ void testSide(float dist1) {
 
 float distCalc (float pingTime){	//calculate target distance based on ping time
 	float dist = pingTime * speedOfSound / 2000000;
-	if (dist == 0){
-		dist = 25;
-	}
 	Serial.print(dist);
 	Serial.write(" centimeters");
 	Serial.println();

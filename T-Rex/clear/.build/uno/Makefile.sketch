@@ -5,7 +5,7 @@
 
 .build/uno/src/clear.cpp : src/clear.ino
 	@mkdir -p .build/uno/src
-	@echo src/clear.ino
+	@echo [93msrc/clear.ino[0m
 	@/usr/local/bin/ino preproc  -o $@ $^
 
 

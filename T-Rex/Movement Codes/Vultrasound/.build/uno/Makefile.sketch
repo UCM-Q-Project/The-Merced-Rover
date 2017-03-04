@@ -5,7 +5,7 @@
 
 .build/uno/src/Vultrasound.cpp : src/Vultrasound.ino
 	@mkdir -p .build/uno/src
-	@echo src/Vultrasound.ino
+	@echo [93msrc/Vultrasound.ino[0m
 	@/usr/local/bin/ino preproc  -o $@ $^
 
 
