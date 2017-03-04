@@ -1,0 +1,5 @@
+http://www.engineeringtoolbox.com/young-modulus-d_417.html
+
+
+pine wood 9    psi-(lb/inch^2)
+oakwood   11   psi 
