@@ -1,4 +1,4 @@
-#include <Servo.h>	//import servo
+#include <Servo.h>	
 #include "../lib/QueueArray.h"
 
 int trigPin=6; //Sensor Trig pin connected to Arduino pin 6
@@ -57,7 +57,7 @@ void loop()
 		queue.enqueue(targetDistance);
 		aveDist -= queue.dequeue();
 	}
-	if(aveDist / queue.count() <= 35){
+	if(aveDist / 10 <= 35){
   		sRight.writeMicroseconds(sRight_stop);
 		sLeft.writeMicroseconds(sLeft_stop);
 		delay(500);
