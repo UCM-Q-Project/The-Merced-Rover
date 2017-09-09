@@ -1,0 +1,14 @@
+
+
+
+
+
+.build/uno/src/DuoUltraSoundNet.cpp : src/DuoUltraSoundNet.ino
+	@mkdir -p .build/uno/src
+	@echo [93msrc/DuoUltraSoundNet.ino[0m
+	@/usr/local/bin/ino preproc  -o $@ $^
+
+
+all : .build/uno/src/DuoUltraSoundNet.cpp
+	@true
+
